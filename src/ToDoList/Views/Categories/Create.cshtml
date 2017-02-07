@@ -3,19 +3,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model ToDoList.Models.Item
+@model ToDoList.Models.Category
 
 <h2>Create</h2>
 <hr />
-<h4>Add a new task</h4>
+<h4>Add a new category</h4>
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Description)
     @Html.TextBoxFor(model => model.Description)
 
-    @Html.LabelFor(model => model.CategoryId)
-    @Html.DropDownList("CategoryId");
-
-    <input type="submit" value="Add new task" />
+    <input type="submit" value="Add new category" />
 }
 <p>@Html.ActionLink("Back to list", "Index")</p>
