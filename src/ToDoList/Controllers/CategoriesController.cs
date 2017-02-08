@@ -19,7 +19,7 @@ namespace ToDoList.Controllers
 
         public IActionResult Details(int id)
         {
-            var thisItem = db.Categories.Where(categories => categories.Id == id).Include(category => category.Items).FirstOrDefault();
+            var thisItem = db.Categories.Where(categories => categories.Id == id).FirstOrDefault();
             return View(thisItem);
         }
 

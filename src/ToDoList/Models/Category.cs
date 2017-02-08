@@ -9,12 +9,12 @@ namespace ToDoList.Models
     {
         public Category()
         {
-            this.Items = new HashSet<Item>();
+            this.CategoryItems = new HashSet<CategoryItem>();
         }
 
         [Key]
         public int Id { get; set; }
         public string Description { get; set; }
-        public virtual ICollection<Item> Items { get; set; }
+        public virtual ICollection<CategoryItem> CategoryItems { get; set; }
     }
 }

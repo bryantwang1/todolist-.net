@@ -181,5 +181,9 @@ C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Controllers\CategoriesControlle
 C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Controllers\HomeController.cs
 C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Controllers\ItemsController.cs
 C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Models\Category.cs
+C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Models\CategoryItem.cs
+C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Models\CategoryItemPriority.cs
 C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Models\Item.cs
+C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Models\ItemPriority.cs
+C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Models\Priority.cs
 C:\Users\epicodus\Desktop\net-to-do\src\ToDoList\Models\ToDoListContext.cs

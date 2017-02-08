@@ -3,10 +3,27 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model ToDoList.Models.Item
-
+@model List<ToDoList.Models.CategoryItem>
 
 <h2>Details</h2>
 <hr />
-@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)
+
+@foreach(var categoryItem in Model)
+{
+    <p>CatId: @categoryItem.Category.Id ItemId: @categoryItem.Item.Id</p>
+}
+
+@*@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)*@
+
+@*@foreach (var category in ViewBag.Categories)
+{
+    @*<p>@Html.DisplayFor( _ => category.Description)</p>
+    <p>@category</p>
+}*@
+
+@*@foreach (var priority in ViewBag.Priorities)
+{
+    <p>@priority</p>
+}*@
+
 <p>@Html.ActionLink("Back to list", "Index")</p>
